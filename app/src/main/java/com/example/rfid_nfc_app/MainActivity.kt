@@ -195,14 +195,14 @@ class MainActivity : AppCompatActivity() {
             Log.e(TAG, "Couldn't parse JSON: ", e)
         }
         val nameField = binding.computerName.text
-        nameField.clear()
-        nameField.append(name)
+        nameField?.clear()
+        nameField?.append(name)
         val ramField = binding.computerRam.text
-        ramField.clear()
-        ramField.append(ram)
+        ramField?.clear()
+        ramField?.append(ram)
         val processorField = binding.computerProcessor.text
-        processorField.clear()
-        processorField.append(processor)
+        processorField?.clear()
+        processorField?.append(processor)
     }
 
     private val mTagWriter: View.OnClickListener = View.OnClickListener {
